@@ -22,5 +22,6 @@ urlpatterns = [
     # Step 2 first argument given is default URL (empty)
     # Step 3 third argument is views function from other project (has HTTP response)
     path('', views.home),
-    path('eggs', views.eggs),
+    # Adding a slash at the end is a preference choice
+    path('password/', views.password, name='password'),
 ]

@@ -9,8 +9,8 @@ from django.http import HttpResponse
 def home(request):
     # Step 2 Use render, 1st arg is request, 2nd arg is the html path,
     # 3rd argument is content being passed to view.
-    return render(request, 'generator/home.html', {'password':'hdklaffjlak'})
+    return render(request, 'generator/home.html')
 
-def eggs(request):
-    # Step 2 Return HttpResponse
-    return HttpResponse('Eggs are so tasty!')
+def password(request):
+
+    return render(request, 'generator/password.html')
